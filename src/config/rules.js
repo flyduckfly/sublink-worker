@@ -2,8 +2,20 @@
  * Rule Definitions
  * Contains unified rule structure and predefined rule sets
  */
+// 'domain:openai.com',       // 显式指定为全路径匹配 (DOMAIN)
+// 'suffix:openai.com',       // 显式指定为后缀匹配 (DOMAIN-SUFFIX)
+// 'keyword:openai',          // 显式指定为关键字匹配 (DOMAIN-KEYWORD)
+// 'geosite:openai'           // 显式指定为 GeoSite 预设
 
-export const CUSTOM_RULES = [];
+export const CUSTOM_RULES = [
+	{
+        name: 'myproxy',
+        site_rules: [
+            'suffix:baidu.com'
+        ],
+        ip_rules: []
+    }
+];
 
 export const UNIFIED_RULES = [
 	{
