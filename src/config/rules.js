@@ -9,7 +9,7 @@
 
 export const CUSTOM_RULES = [
 	{
-        name: 'myproxy',
+        name: 'MyProxy',
         site_rules: [
             'suffix:baidu.com'
         ],
